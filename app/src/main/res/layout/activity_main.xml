@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".View.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50px"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34dp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <ImageView
+        android:layout_width="374dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_ecole"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/bienvenue"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/choisir"
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_invite"
+        android:layout_width="354dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/invite_btn"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_inscription"
+        android:layout_width="354dp"
+        android:layout_height="67dp"
+        android:text="@string/inscription_btn"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_user_choice"
+        android:layout_width="354dp"
+        android:layout_height="67dp"
+        android:text="@string/user_choice_btn"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:background="#FCE056"
+        android:text="@string/credits"
+        android:textSize="15dp" />
+
+</LinearLayout>

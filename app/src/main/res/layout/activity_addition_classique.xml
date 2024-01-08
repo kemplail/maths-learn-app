@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".View.AdditionClassiqueActivity">
+
+    <TextView
+        android:id="@+id/titre_additions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/additions_classiques_title"
+        android:layout_marginBottom="50dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/numero_round_additions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="22dp"
+        android:textStyle="italic"
+        />
+
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:background="@color/design_default_color_primary"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nombre1_additions"
+            android:layout_width="14dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="62sp" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="+"
+            android:gravity="center"
+            android:textSize="62sp" />
+
+        <TextView
+            android:id="@+id/nombre2_additions"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="62sp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:text="="
+            android:gravity="center"
+            android:textSize="62sp" />
+
+        <EditText
+            android:id="@+id/reponse_user"
+            android:layout_width="86dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="62sp"
+            android:inputType="number">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btn_retour"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_retour" />
+
+        <Button
+            android:id="@+id/btn_suivant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_suivant" />
+
+    </LinearLayout>
+
+</LinearLayout>

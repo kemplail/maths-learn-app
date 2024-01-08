@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/connexion"
+        android:textSize="36sp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+
+        android:layout_width="380dp"
+        android:layout_height="417dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#ACFC88"
+            android:gravity="center"
+            android:text="@string/code_instruction"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tv_code_invalide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/code_invalide"
+            android:textColor="#EA0707" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_valider"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="@string/btn_valider" />
+
+        <Button
+            android:id="@+id/button_retour"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="@string/btn_retour" />
+
+    </LinearLayout>
+
+</LinearLayout>

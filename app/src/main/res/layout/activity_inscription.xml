@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".View.InscriptionActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/inscription_title"
+        android:textSize="36sp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+
+        android:layout_width="380dp"
+        android:layout_height="423dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#ACFC88"
+            android:gravity="center"
+            android:text="@string/pseudo_instruction"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edit_pseudo"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ACFC88"
+            android:gravity="center"
+            android:text="@string/age_instruction"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <NumberPicker
+            android:id="@+id/edit_age"
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ACFC88"
+            android:gravity="center"
+            android:text="@string/code_instruction"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:id="@+id/inscription_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textStyle="italic"
+            android:text="@string/inscription_warning" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="@string/btn_valider" />
+
+        <Button
+            android:id="@+id/button_retour"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="@string/btn_retour" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/accueil"
+        android:id="@+id/menu_accueil" />
+    <item android:title="@string/exercices_menu" >
+        <menu >
+            <item
+                android:id="@+id/menu_exos_debutant"
+                android:title="@string/exos_debutant" />
+            <item
+                android:id="@+id/menu_exos_confirme"
+                android:title="@string/exos_confirme" />
+        </menu>
+    </item>
+    <item
+        android:title="@string/espace_user"
+        android:id="@+id/menu_espace_user" />
+    <item
+        android:title="@string/statistiques"
+        android:id="@+id/menu_statistiques" />
+    <item
+        android:title="@string/deconnexion"
+        android:id="@+id/menu_deconnexion" />
+</menu>

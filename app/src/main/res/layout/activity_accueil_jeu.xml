@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AccueilJeuActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accueil"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="7dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="38dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/choix_rubrique"
+        android:textStyle="italic" />
+
+    <LinearLayout
+
+        android:layout_width="400dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_exos_debutant"
+            android:layout_width="175dp"
+            android:layout_height="138dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/exos_debutant_title"
+            android:textColor="#136D03"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_exos_confirme"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/exos_confirme_title"
+            android:textColor="#136D03"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="400dp"
+        android:layout_height="163dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_espace_user"
+            android:layout_width="175dp"
+            android:layout_height="138dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/espace_user_title"
+            android:textColor="#136D03"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_statistiques"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/stats_title"
+            android:textColor="#136D03"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_co"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FCE056"
+        android:gravity="center"
+        android:text="Utilisateur connecté : "
+        android:textColor="#B41010"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_deconnection"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:text="@string/deconnexion"
+        android:layout_gravity="center" />
+
+</LinearLayout>

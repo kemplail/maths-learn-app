@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".View.MesStatistiquesActivity">
+
+    <TextView
+        android:id="@+id/titre_mestsats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/statistiques"
+        android:textColor="@color/colorPrimary"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="7dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/stats_infosgenerales"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/partiesjouees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/stats_parties_jouees"
+            android:textSize="20dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/partiesgagnees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/stats_parties_gagnees"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pourcentagevictoire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:text="@string/stats_perc_victoire"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/scoresmoyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/stats_5_derniersscores"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/score"
+        android:layout_width="352dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_tous_scores"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/stats_voir_tousscores"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_retour"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_retour"
+        />
+
+</LinearLayout>
